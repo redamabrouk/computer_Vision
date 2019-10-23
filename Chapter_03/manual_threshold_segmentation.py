@@ -37,11 +37,8 @@ image = Image.open('historignal.jpg').convert("L")
 img = np.asarray(image)
 
 h = Hist(img)
-plt.plot(h)
-plt.xlim([0,256])
-plt.show()
 
-res = regenerate_img(img, 125)
+res = regenerate_img(img, 120)
 plt.imshow(res,cmap='gray')
 plt.show()
 plt.imsave("otsu.jpg",res,cmap='gray')

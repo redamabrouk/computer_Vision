@@ -112,7 +112,7 @@ def get_optimal_threshold():
     return optimal_threshold[0]
 
 
-image = Image.open('historignal.jpg').convert("L")
+image = Image.open('noisyimg.png').convert("L")
 img = np.asarray(image)
 
 h = Hist(img)
